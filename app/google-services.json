@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "659098461486",
+    "project_id": "prothese-c3f24",
+    "storage_bucket": "prothese-c3f24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659098461486:android:921d6a7b5ef53abc1306bf",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALv6HeK-LM1WzQCbTZhcdC_yMeW5S10NA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,317 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalibrageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        >
+
+        <!-- Main content of the app -->
+        <!-- Add your main content here -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:layout_marginTop="0dp"
+            android:gravity="start">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/hamberger"
+                android:gravity="start"
+                android:layout_marginLeft="10dp" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:paddingTop="40dp"
+                android:layout_marginStart="0dp"
+                android:text="Prothese \n Connect" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <!-- Horizontal menu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:layout_marginTop="10dp">
+
+            <!-- First menu item -->
+            <LinearLayout
+                android:id="@+id/apparainage"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textBluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="apparainage" />
+
+                <ImageView
+                    android:id="@+id/imageBluetooth"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/bluetooth"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <!-- Second menu item -->
+            <LinearLayout
+                android:id="@+id/calibrage"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textCalibrage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="calibrage" />
+
+                <ImageView
+                    android:id="@+id/imageCalibrage"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/calibrage"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <!-- Third menu item -->
+            <LinearLayout
+                android:id="@+id/donnees"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="donnees" />
+
+                <ImageView
+                    android:id="@+id/imageDonnees"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/donnees"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <!-- Fourth menu item -->
+            <LinearLayout
+                android:id="@+id/notifications"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="notifications" />
+
+                <ImageView
+                    android:id="@+id/imageNotif"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/notifications"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Bottom section with rounded corners -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/layout_gray"
+            android:id="@+id/parentLayout">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/protheselogo"
+                android:layout_marginBottom="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="calibrez \n Votre \n prothese"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginBottom="50dp"
+                />
+
+            <TextView
+            android:id="@+id/sensibilite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sensibilite"
+            android:layout_gravity="start"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical">
+
+                <!-- Top layout representing the sliding bar background -->
+                <View
+                    android:id="@+id/backgroundView"
+                    android:layout_width="200dp"
+                    android:layout_height="16dp"
+                    android:background="@color/grayMiniLayout"
+                    android:layout_centerVertical="true" />
+
+                <!-- Bottom layout representing the sliding indicator -->
+                <View
+                    android:id="@+id/indicatorView"
+                    android:layout_width="50dp"
+                    android:layout_height="16dp"
+                    android:background="@color/blueBar"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true" />
+
+                <!-- First image to the right of the bar -->
+                <ImageView
+                    android:id="@+id/plus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/plus"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"/>
+
+                <!-- Second image to the right of the bar -->
+                <ImageView
+                    android:id="@+id/minus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/minus"
+                    android:layout_toStartOf="@id/plus"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/angle"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="angle"
+                android:layout_gravity="start"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <RelativeLayout
+
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical">
+
+                <!-- Top layout representing the sliding bar background -->
+                <View
+                    android:id="@+id/backgroundView2"
+                    android:layout_width="200dp"
+                    android:layout_height="16dp"
+                    android:background="@color/grayMiniLayout"
+                    android:layout_centerVertical="true" />
+
+                <!-- Bottom layout representing the sliding indicator -->
+                <View
+                    android:id="@+id/indicatorView2"
+                    android:layout_width="50dp"
+                    android:layout_height="16dp"
+                    android:background="@color/blueBar"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true" />
+
+                <!-- First image to the right of the bar -->
+                <ImageView
+                    android:id="@+id/plus2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/plus"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"/>
+
+                <!-- Second image to the right of the bar -->
+                <ImageView
+                    android:id="@+id/minus2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/minus"
+                    android:layout_toStartOf="@id/plus2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"/>
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

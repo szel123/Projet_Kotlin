@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/apparainage"
+        android:title="apparainage"
+        android:icon="@drawable/bluetooth"
+    ></item>
+    <item
+        android:id="@+id/calibrage"
+        android:title="calibrage"
+        android:icon="@drawable/bluetooth"
+    ></item>
+
+</menu>
