@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.myapplication"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -33,11 +33,14 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.5"
     }
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -50,5 +53,11 @@ dependencies {
     val nav_version = "2.7.7"
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
-
+    implementation("co.yml:ycharts:2.1.0")
+    implementation("androidx.compose.ui:ui:1.4.5")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.4.5")
+    implementation("androidx.compose.material3:material3:1.1.0")
+    implementation("androidx.activity:activity-compose:1.7.0")
 }
+
+apply(plugin = "com.google.gms.google-services")

@@ -283,7 +283,6 @@ class CalibrageActivity : AppCompatActivity() {
                     val intent = Intent(this@CalibrageActivity, MainActivity::class.java)
                     startActivity(intent)
                 } catch (e: Exception) {
-                    println("ici c'est le ${e.printStackTrace()}")
                 }
 
         }
