@@ -10,4 +10,8 @@
     <color name="blueBar">#65bdff</color>
     <color name="grayLayout">#d6d6d7</color>
     <color name="grayMiniLayout">#b7b7b8</color>
+    <color name="redNotifBack">#e9a8a8</color>
+    <color name="redNotif">#b30000</color>
+    <color name="greenNotifBack">#b8f6cf</color>
+    <color name="greenNotif">#008832</color>
 </resources>

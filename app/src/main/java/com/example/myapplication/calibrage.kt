@@ -278,6 +278,15 @@ class CalibrageActivity : AppCompatActivity() {
         val notifications: LinearLayout = findViewById(R.id.notifications)
         val donnees: LinearLayout = findViewById(R.id.donnees)
 
+        notifications.setOnClickListener {
+            try {
+                val intent = Intent(this@CalibrageActivity, NotificationActivity::class.java)
+                startActivity(intent)
+            } catch (e: Exception) {
+            }
+
+        }
+
         apparainage.setOnClickListener {
                 try {
                     val intent = Intent(this@CalibrageActivity, MainActivity::class.java)

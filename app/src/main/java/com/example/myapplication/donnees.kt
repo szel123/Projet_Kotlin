@@ -134,6 +134,15 @@ class DonnesActivity : AppCompatActivity() {
 
         }
 
+        notifications.setOnClickListener {
+            try {
+                val intent = Intent(this@DonnesActivity, NotificationActivity::class.java)
+                startActivity(intent)
+            } catch (e: Exception) {
+            }
+
+        }
+
         calibrage.setOnClickListener {
 
 

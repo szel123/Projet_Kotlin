@@ -59,9 +59,14 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+
         notifications.setOnClickListener {
-            // Action to perform when the first LinearLayout is clicked
-            Toast.makeText(this, "notifications", Toast.LENGTH_SHORT).show()
+            try {
+                val intent = Intent(this@MainActivity, NotificationActivity::class.java)
+                startActivity(intent)
+            } catch (e: Exception) {
+            }
+
         }
 
         donnees.setOnClickListener {
@@ -101,10 +106,8 @@ class MainActivity : AppCompatActivity() {
 
                 // Now that we have the list, we can update the UI
                 val parentLayout: LinearLayout = findViewById(R.id.parentLayout)
-                println("ilog list size ${prothesesList.size}")
 
                 for (prothese in prothesesList) {
-                    println("ilog on est")
                     val protheseLayout = LinearLayout(this).apply {
                         orientation = LinearLayout.HORIZONTAL
                         setBackgroundResource(R.drawable.layout_gray_dark)

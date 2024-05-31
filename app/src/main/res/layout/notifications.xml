@@ -1,0 +1,200 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NotificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        >
+
+        <!-- Main content of the app -->
+        <!-- Add your main content here -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:layout_marginTop="0dp"
+            android:gravity="start">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/hamberger"
+                android:gravity="start"
+                android:layout_marginLeft="10dp" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:paddingTop="40dp"
+                android:layout_marginStart="0dp"
+                android:text="Prothese \n Connect" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <!-- Horizontal menu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:layout_marginTop="10dp">
+
+            <!-- First menu item -->
+            <LinearLayout
+                android:id="@+id/apparainage"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textBluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="apparainage" />
+
+                <ImageView
+                    android:id="@+id/imageBluetooth"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/bluetooth"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <!-- Second menu item -->
+            <LinearLayout
+                android:id="@+id/calibrage"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textCalibrage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="calibrage" />
+
+                <ImageView
+                    android:id="@+id/imageCalibrage"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/calibrage"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <!-- Third menu item -->
+            <LinearLayout
+                android:id="@+id/donnees"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="donnees" />
+
+                <ImageView
+                    android:id="@+id/imageDonnees"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/donnees"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <!-- Fourth menu item -->
+            <LinearLayout
+                android:id="@+id/notifications"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="notifications"
+                    android:id="@+id/textNotification"/>
+
+                <ImageView
+                    android:id="@+id/imageNotif"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/notifications"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/notifUrg"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="notifications urgentes"
+                android:textColor="@color/redNotif"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/notifNorm"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="80dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="notifications encouragees"
+                android:textColor="@color/greenNotif"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
